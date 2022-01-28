@@ -1,7 +1,7 @@
 // special file for minimal import
-import * as React from 'react';
-import * as ReactReconciler from 'react-reconciler';
-import Konva from 'konva';
+import * as React from "react";
+import * as ReactReconciler from "react-reconciler";
+import Konva from "konva";
 
 export interface KonvaNodeEvents {
   onMouseOver?(evt: Konva.KonvaEventObject<MouseEvent>): void;
@@ -46,7 +46,7 @@ export interface StageProps
     KonvaNodeEvents,
     Pick<
       React.HTMLAttributes<HTMLDivElement>,
-      'className' | 'role' | 'style' | 'tabIndex' | 'title'
+      "className" | "role" | "style" | "tabIndex" | "title"
     > {}
 
 // Stage is the only real class because the others are stubs that only know how
@@ -90,4 +90,4 @@ export var Arrow: KonvaNodeComponent<Konva.Arrow, Konva.ArrowConfig>;
 export var Shape: KonvaNodeComponent<Konva.Shape, Konva.ShapeConfig>;
 
 export var useStrictMode: (useStrictMode: boolean) => void;
-export var KonvaRenderer: ReactReconciler.Reconciler<any, any, any, any, any>
+export var KonvaRenderer: ReactReconciler.Reconciler<any, any, any, any, any>;
